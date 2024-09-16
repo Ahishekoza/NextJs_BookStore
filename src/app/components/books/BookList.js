@@ -1,18 +1,15 @@
-import BookCard from "./BookCard"
+import BookCard from "./BookCard";
 
-
-const BookList = ({books}) => {
+const BookList = ({ books }) => {
   return (
     <>
-    {
-        books.map((book)=>{
-            return (
-               <BookCard key={book?.id} book={book}/> 
-            )
-        })
-    }
+      <div className="flex flex-wrap gap-2 justify-center">
+        {books.map((book) => {
+          return <BookCard key={book?.id} book={book} />;
+        })}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default BookList
+export default BookList;

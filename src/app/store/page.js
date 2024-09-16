@@ -8,7 +8,7 @@ const BookListPage = () => {
  
 
   return (
-    <div>
+    <div className='w-full'>
       <BookList books={books}/>
     </div>
   )
